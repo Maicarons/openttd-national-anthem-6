@@ -57,8 +57,14 @@ def volume_groups():
 
 
 def slot_assignment(midis):
-    """Map fixed slots to the first len(midis) anthems (deterministic)."""
-    return {SLOT_ORDER[i]: m for i, m in enumerate(midis)}
+    """Fill all 31 fixed slots deterministically.
+
+    Bananas requires every base-music .obm to define all 31 [files] slots
+    (theme + old_0..9 + new_0..9 + ezy_0..9). A volume with N unique anthems
+    (here 27) fills the first N slots, then repeats earlier anthems to reach 31
+    so no slot is missing. Every unique anthem still appears at least once.
+    """
+    return {SLOT_ORDER[i]: midis[i % len(midis)] for i in range(len(SLOT_ORDER))}
 
 
 def repo_midis(repo_dir, volume):
@@ -125,9 +131,10 @@ def make_tarball(repo_dir, volume, midis):
     for p in (tar_path, tgz_path):
         if os.path.exists(p):
             os.remove(p)
+    # Bananas only accepts .obm, .mid and .txt files in a base-music package.
     members = [m[0] + ".mid" for m in midis] + [
         "national_anthems_vol%d.obm" % volume,
-        "README.md", "LICENSE", "changelog.txt", "Makefile",
+        "readme.txt", "license.txt", "changelog.txt",
     ]
     for mode, out in (("w", tar_path), ("w:gz", tgz_path)):
         with tarfile.open(out, mode) as tar:
@@ -245,7 +252,11 @@ is given. License text: <https://creativecommons.org/licenses/by/4.0/>
 Generated {today}.
 """
 
+    # README.md is for GitHub; readme.txt goes inside the Bananas package
+    # (Bananas only recognises .txt documentation files, not .md).
     with open(os.path.join(repo_dir, "README.md"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(readme)
+    with open(os.path.join(repo_dir, "readme.txt"), "w", encoding="utf-8", newline="\n") as f:
         f.write(readme)
 
     license_text = (
@@ -262,7 +273,10 @@ Generated {today}.
         "\n"
         "License: https://creativecommons.org/licenses/by/4.0/\n"
     )
+    # LICENSE is for GitHub; license.txt goes inside the Bananas package.
     with open(os.path.join(repo_dir, "LICENSE"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(license_text)
+    with open(os.path.join(repo_dir, "license.txt"), "w", encoding="utf-8", newline="\n") as f:
         f.write(license_text)
 
     changelog = (

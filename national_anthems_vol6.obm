@@ -35,6 +35,10 @@ ezy_2    = vn.mid
 ezy_3    = vu.mid
 ezy_4    = xx.mid
 ezy_5    = ye.mid
+ezy_6    = sn.mid
+ezy_7    = so.mid
+ezy_8    = sr.mid
+ezy_9    = st.mid
 
 [md5s]
 sn.mid   = e080efe71b58242a7b5f8de1792fde1d
@@ -93,6 +97,10 @@ ezy_2    = Vietnam
 ezy_3    = Vanuatu
 ezy_4    = Unknown (manislef)
 ezy_5    = Yemen
+ezy_6    = Senegal
+ezy_7    = Somalia
+ezy_8    = Suriname
+ezy_9    = Sao Tome and Principe
 
 [origin]
 default      = National anthems of the world — OpenTTD Base Music, Volume 6 of 6.
