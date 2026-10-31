@@ -103,15 +103,15 @@ def write_obm(repo_dir, volume, slots):
         fname = iso2 + ".mid"
         lines.append("%-8s = %s" % (slot, fname))
         md5s[fname] = md5_of(os.path.join(repo_dir, fname))
-        names[slot] = name_
+        names[fname] = name_
     lines.append("")
     lines.append("[md5s]")
     for fname, h in md5s.items():
         lines.append("%-8s = %s" % (fname, h))
     lines.append("")
     lines.append("[names]")
-    for slot, name_ in names.items():
-        lines.append("%-8s = %s" % (slot, name_))
+    for fname, name_ in names.items():
+        lines.append("%-8s = %s" % (fname, name_))
     lines.append("")
     lines.append("[origin]")
     lines.append("default      = National anthems of the world — OpenTTD Base Music, "
