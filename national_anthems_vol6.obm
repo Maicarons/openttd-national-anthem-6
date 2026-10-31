@@ -1,0 +1,98 @@
+; National anthems of the world — Volume 6 of 6 (OpenTTD Base Music)
+; Auto-generated; slot assignment is deterministic from ISO codes.
+
+[metadata]
+name              = national_anthems_vol6
+shortname         = ANT6
+version           = 1
+description       = National anthems of the world — Volume 6 of 6 (OpenTTD Base Music set).
+
+[files]
+theme    = sn.mid
+old_0    = so.mid
+old_1    = sr.mid
+old_2    = st.mid
+old_3    = sv.mid
+old_4    = sy.mid
+old_5    = sz.mid
+old_6    = td.mid
+old_7    = tg.mid
+old_8    = th.mid
+old_9    = tn.mid
+new_0    = to.mid
+new_1    = tr.mid
+new_2    = tt.mid
+new_3    = tv.mid
+new_4    = tz.mid
+new_5    = ua.mid
+new_6    = ug.mid
+new_7    = us.mid
+new_8    = uy.mid
+new_9    = va.mid
+ezy_0    = vc.mid
+ezy_1    = ve.mid
+ezy_2    = vn.mid
+ezy_3    = vu.mid
+ezy_4    = xx.mid
+ezy_5    = ye.mid
+
+[md5s]
+sn.mid   = e080efe71b58242a7b5f8de1792fde1d
+so.mid   = d155dca69604b75a533b37d3ca1f8bbf
+sr.mid   = 2194d2c77b3bf7e9e334ca439d874de5
+st.mid   = bd17e243ac0ed8ff0d1734dab9d410ab
+sv.mid   = 0682f3b58b1490b8aa01d71310af6b1d
+sy.mid   = 58c9425a0fa1484598b802c53c9acd2a
+sz.mid   = ef2592e3aa301816c976b3bbfbf00112
+td.mid   = 5622fb3c18862e44c0fd57d2b57bf1ff
+tg.mid   = 3ff76941534082735b213fe50511d4cb
+th.mid   = 516fad05afcd142e98756d4ed5d12d81
+tn.mid   = 740b87951e4c283c030455d98eac036c
+to.mid   = 9ad91ac666333e7e27293b46f61ee901
+tr.mid   = 33214d2f95f4709fdc0a5fdfebd1ebfa
+tt.mid   = 2479eb12d5d431896969600784fcd7f3
+tv.mid   = 8f79859421f80dbb2ef62dcd677d9027
+tz.mid   = 5d10d5c0583a0eefb4456f6423868bf4
+ua.mid   = c77624e23d1d9fc3f03cb64d6fd535f7
+ug.mid   = c056f7c327e40d5c2ca79fcc490c8a4d
+us.mid   = 8c7d8213fbe28d163b4b841e9043d758
+uy.mid   = 48f84cae53e1b7d894ecc614a3381ba8
+va.mid   = 8a717fb360e81a9c5b63b01bb2377795
+vc.mid   = ac4a9faa96c7f12d29ba02db28427b48
+ve.mid   = 5df5b04a3e180b7aaa9071ebb350afaf
+vn.mid   = d82d59ec9ab949f49c4fd874b42420bb
+vu.mid   = bc0af722686e26348b211f3fc0e1f751
+xx.mid   = 540bf8e1cd6c1bda03526474c6868cbb
+ye.mid   = 73127c43571fdc0a79625a958a8d4d4f
+
+[names]
+theme    = Senegal
+old_0    = Somalia
+old_1    = Suriname
+old_2    = Sao Tome and Principe
+old_3    = El Salvador
+old_4    = Syria
+old_5    = Eswatini
+old_6    = Chad
+old_7    = Togo
+old_8    = Thailand
+old_9    = Tunisia
+new_0    = Tonga
+new_1    = Turkey
+new_2    = Trinidad and Tobago
+new_3    = Tuvalu
+new_4    = Tanzania
+new_5    = Ukraine
+new_6    = Uganda
+new_7    = United States
+new_8    = Uruguay
+new_9    = Vatican City
+ezy_0    = Saint Vincent and the Grenadines
+ezy_1    = Venezuela
+ezy_2    = Vietnam
+ezy_3    = Vanuatu
+ezy_4    = Unknown (manislef)
+ezy_5    = Yemen
+
+[origin]
+default      = National anthems of the world — OpenTTD Base Music, Volume 6 of 6.

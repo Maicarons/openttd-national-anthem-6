@@ -1,0 +1,5 @@
+1.0 (initial release)
+  * Volume 6 of 6: 27 national-anthem MIDI files.
+  * Packaged as OpenTTD Base Music (national_anthems_vol6.obm).
+  * Deduplicated source set (162 unique anthems across 6 volumes).
+  * License: CC BY 4.0.
